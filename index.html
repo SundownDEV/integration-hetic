@@ -13,14 +13,25 @@
     <header>
     	<nav></nav>
 
-    	<h1 class="mainTitle"></h1>
-    	<h2 class="catchPhrase"></h2>
+		<div class="headerTextDiv">
+	    	<h1 class="mainTitle">Graficity</h1>
+	    	<h2 class="catchPhrase">follow the street</h2>
+		</div>
 
-    	<img class="tunnelBgImg" src="" alt="A road under a graphed tunnel.">
+    	<div class="headerBgImgDiv">
+	    	<div>
+	    		<img class="tunnelBgImg" src="./img/tunnelBgImg.jpg" alt="A road under a graphed tunnel.">
+	    	</div>
+
+	    	<div class="filterTunnelBgImg"></div>
+    	</div>
+
     </header>
 
 	<section class="worldMapSection">
-		<img class="worldMapImg" src="" alt="A world map.">
+		<div class="worldMapImgDiv">
+			<img class="worldMapImg" src="" alt="A world map.">
+		</div>
 	</section>
 
 	<section class="streetArtExemplesSection">
@@ -49,7 +60,9 @@
 	</section>
 
 	<section class="subscriptionSection">
-		<img class="subscriptionSectionBgImg" src="" alt="A man and a woman sharing a milkshake."></img>
+		<div class="subscriptionBgImgDiv">
+			<img class="subscriptionBgImg" src="" alt="A man and a woman sharing a milkshake."></img>
+		</div>
 
 		<div class="magazineCoverImgDiv">
 			<img class="magazineCoverImg" src="" alt="Cover of the first Grafiti magazine.">
@@ -58,7 +71,7 @@
 		<div class="magazineDescriptionDiv">
 			<h2 class="magazineDescriptionTitle"></h2>
 			<p class="magazineDescriptionText"></p>
-			<button class="subscribeButton"></button>
+			<button class="subscribeButton">subscribe</button>
 		</div>
 	</section>
 
@@ -66,18 +79,24 @@
 		<img class="newsletterSectionBgImg" src="" alt="A men looking at a graphed wall.">
 
 		<div class="newsletterContainer">
-			<div>
+			<div class="newsletterTitleDiv">
 				<!-- svg -->
-				<h2 class=""></h2>
+				<h2 class="newsletterTitle">subscribe to our newsletter</h2>
 			</div>
-			<input type="" name="">
+
+			<div class="">
+				<input class="newsletterInput" type="" name="" placeholder="yourmail@example.com">
+				<button class="newsletterSubmit">Submit</button>
+			</div>
+
 			<div class="separator"></div>
+
 			<div class="socialNetworkDiv">
 				<ul class="listSocialNetwork">
-					<li class=""><!-- svg --></li>
-					<li class=""><!-- svg --></li>
-					<li class=""><!-- svg --></li>
-					<li class=""><!-- svg --></li>
+					<li class="facebookListItem"><!-- svg --></li>
+					<li class="twitterListItem"><!-- svg --></li>
+					<li class="instagramListItem"><!-- svg --></li>
+					<li class="pinterestListItem"><!-- svg --></li>
 				</ul>
 			</div>
 		</div>
