@@ -127,19 +127,48 @@ body {
   align-items: center;
 }
 
-.subscriptionContainer {
-  background: rgba(1, 46, 62, 0.35);
+.section.subscriptionSection.BgImg {
+    background-image: url('../../img/backgrounds/background2.jpg');
+}
+
+.section-content.subscriptionContainer {
+  background: rgba(1, 46, 62, 0.7);
   width: 80%;
   height: 500px;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .magazineCoverImgDiv {
-  height: 300px;
+  width: 40%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .magazineCoverImg {
   height: 100%;
+}
+
+.magazineDescriptionDiv {
+  width: 60%;
+  height: 90%;
+}
+
+.magazineDescriptionTitle {
+  font-size: 36px;
+  color: #ededed;
+}
+
+.magazineDescriptionText {
+  font-size: 24px;
+  color: #ededed;
+  font-weight: 300;
+  line-height: 30px;
+  margin-top: 20px;
 }
 
 .section.newsletterSection.BgImg {
