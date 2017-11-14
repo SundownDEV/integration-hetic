@@ -1,11 +1,10 @@
 @font-face {
  font-family: "Raleway";
- src: url("../../fonts/Raleway-v4020-Bold.otf") format("otf"),
-      url("../../fonts/Raleway-v4020-Black.otf") format("otf"),
-      url("../../fonts/Raleway-v4020-Light.otf") format("otf"),
-      url("../../fonts/Raleway-v4020-Medium.otf") format("otf")
-      url("../../fonts/Raleway-v4020-Regular.otf") format("otf"),
-      url("../../fonts/Raleway-v4020-Thin.otf") format("otf");
+ src: url("../../fonts/raleway_thin-webfont.ttf") format("ttf");
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
 .section {
@@ -15,6 +14,30 @@
     justify-content: center;
 }
 
+.section .BgImg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
 .section.graficity-head {
-    background: url('../../img/backgrounds/background1.jpg');
+  width: 100%;
+  background: #000;
+  opacity: 0.75;
+  z-index: 11;
+}
+
+.section .filterTunnel {
+  background-image: url('../../img/backgrounds/background1.jpg');
+}
+
+.section .filterMagazineSubscribe {
+  width: 100%;
+  background-image: -webkit-linear-gradient(300deg, rgb(4,219,146) 0%, rgb(16,123,130) 35%, rgb(27,26,113) 100%);
+  background-image: -o-linear-gradient(300deg, rgb(4,219,146) 0%, rgb(16,123,130) 35%, rgb(27,26,113) 100%);
+  background-image: linear-gradient(30deg, rgb(4,219,146) 0%, rgb(16,123,130) 35%, rgb(27,26,113) 100%);
+  opacity: 0.902;
+  z-index: 11;
 }
