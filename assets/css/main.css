@@ -182,6 +182,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    width: 1000px;
 }
 
 .section.newsletterSection .newsletterTitleDiv {
@@ -194,29 +195,29 @@ body {
     display: inline-block;
     color: #4dd143;
     text-transform: uppercase;
-    margin: auto;
     margin-left: 15px;
     vertical-align: super;
 }
 
 .section.newsletterSection .newsletterText {
-    width: 57%;
+    width: 100%;
     font-size: 22px;
     color: rgb(110, 110, 110);
-    margin: auto;
     font-weight: 300;
+}
+
+.section.newsletterSection .newsletterForm form {
+    font-size: 0;
 }
 
 .section.newsletterSection .newsletterForm .newsletterInput {
     font-size: 22px;
     color: rgba(110, 110, 110, 1);
-    line-height: 1.2;
     padding: 26px 21px;
     font-weight: 300;
     outline: none;
-    border-width: 1px;
-    border-color: rgb(198, 198, 198);
-    border-style: solid;
+    border: 1px solid rgb(198, 198, 198);
+    border-right: none;
     width: 60%;
 }
 
@@ -235,6 +236,7 @@ body {
     border: none;
     outline: none;
     color: #fff;
+    width: 250px;
     background-image: -webkit-linear-gradient(bottom left, rgb(76,209,67) 0%, rgb(71,166,78) 100%);
     background-image: -o-linear-gradient(bottom left, rgb(76,209,67) 0%, rgb(71,166,78) 100%);
     background-image: linear-gradient(to top right, rgb(76,209,67) 0%, rgb(71,166,78) 100%);
