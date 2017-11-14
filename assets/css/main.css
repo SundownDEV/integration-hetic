@@ -3,47 +3,52 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 300;
-  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v12/ZKwULyCG95tk6mOqHQfRBCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  src: local('Raleway Light'), local('Raleway-Light'), url('https://fonts.gstatic.com/s/raleway/v12/ZKwULyCG95tk6mOqHQfRBCEAvth_LlrfE80CYdSH47w.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 300;
-  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v12/-_Ctzj9b56b8RgXW8FArifk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  src: local('Raleway Light'), local('Raleway-Light'), url('https://fonts.gstatic.com/s/raleway/v12/-_Ctzj9b56b8RgXW8FArifk_vArhqVIZ0nv9q090hN8.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
-  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v12/Li18TEFObx_yGdzKDoI_ciEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  src: local('Raleway Medium'), local('Raleway-Medium'), url('https://fonts.gstatic.com/s/raleway/v12/Li18TEFObx_yGdzKDoI_ciEAvth_LlrfE80CYdSH47w.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
-  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v12/CcKI4k9un7TZVWzRVT-T8_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  src: local('Raleway Medium'), local('Raleway-Medium'), url('https://fonts.gstatic.com/s/raleway/v12/CcKI4k9un7TZVWzRVT-T8_k_vArhqVIZ0nv9q090hN8.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v12/WmVKXVcOuffP_qmCpFuyzSEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  src: local('Raleway Bold'), local('Raleway-Bold'), url('https://fonts.gstatic.com/s/raleway/v12/WmVKXVcOuffP_qmCpFuyzSEAvth_LlrfE80CYdSH47w.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v12/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  src: local('Raleway Bold'), local('Raleway-Bold'), url('https://fonts.gstatic.com/s/raleway/v12/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
@@ -55,7 +60,10 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
 }
 
 .section.BgImg {
@@ -66,8 +74,29 @@ body {
   width: 100%;
 }
 
+.section .sectionContentFlex{
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .section-content{
     margin: auto;
+}
+
+.section-content p {
+    line-height: 1.364;
+}
+
+.section-content a {
+    text-decoration: none;
 }
 
 .section .filter{
@@ -85,8 +114,11 @@ body {
 }
 
 .section.graficity-head .section-content {
-    position: absolute;
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     justify-content: center;
     height: 100%;
 }
@@ -123,6 +155,10 @@ body {
   background-image: linear-gradient(30deg, rgb(4,219,146) 0%, rgb(16,123,130) 35%, rgb(27,26,113) 100%);
   opacity: 0.75;
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   justify-content: center;
   align-items: center;
 }
@@ -153,24 +189,54 @@ body {
   height: 100%;
 }
 
-.magazineDescriptionDiv {
-  width: 60%;
-  height: 90%;
+/* Subscription section */
+.section.subscriptionSection.BgImg {
+    background-image: url('../../img/backgrounds/background2.jpg');
 }
 
-.magazineDescriptionTitle {
-  font-size: 36px;
-  color: #ededed;
+.section.subscriptionSection .section-content {
+    background-color: rgba(1, 46, 62, 0.35);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    width: 1000px;
+    color: #ededed;
 }
 
-.magazineDescriptionText {
-  font-size: 24px;
-  color: #ededed;
-  font-weight: 300;
-  line-height: 30px;
-  margin-top: 20px;
+.section.subscriptionSection .section-content .magazineCoverImgDiv {
+    float: left;
+    width: 26%;
 }
 
+.section.subscriptionSection .section-content .magazineDescriptionDiv {
+    display: inline-block;
+    width: 74%;
+}
+
+.section.subscriptionSection .section-content .magazineDescriptionTitle {
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.section.subscriptionSection .section-content .magazineDescriptionText {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.section.subscriptionSection .section-content .subscribeButton {
+    padding: 15px 42px;
+    border-radius: 6px;
+    background-image: linear-gradient(-30deg, #12a078 0%, #09a076 100%);
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* Newsletter section */
 .section.newsletterSection.BgImg {
     background-image: url('../../img/backgrounds/background3.jpg');
 }
@@ -182,7 +248,78 @@ body {
 
 .section.newsletterSection .newsletterContainer {
     background: #fff;
-    width: 500px;
-    padding: 15px;
     border-radius: 10px;
+    padding: 70px 90px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    width: 1000px;
 }
+
+.section.newsletterSection .newsletterTitleDiv {
+    margin-bottom: 64px;
+}
+    
+.section.newsletterSection .newsletterTitleDiv .newsletterTitle {
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    color: #4dd143;
+    text-transform: uppercase;
+    margin-left: 15px;
+    vertical-align: super;
+}
+
+.section.newsletterSection .newsletterText {
+    width: 100%;
+    font-size: 22px;
+    color: rgb(110, 110, 110);
+    font-weight: 300;
+}
+
+.section.newsletterSection .newsletterForm form {
+    font-size: 0;
+}
+
+.section.newsletterSection .newsletterForm .newsletterInput {
+    font-size: 22px;
+    color: rgba(110, 110, 110, 1);
+    padding: 26px 21px;
+    font-weight: 300;
+    outline: none;
+    border: 1px solid rgb(198, 198, 198);
+    border-right: none;
+    width: 60%;
+}
+
+.section.newsletterSection .newsletterForm .newsletterInput::placeholder {
+    font-weight: 300;
+    color: rgba(110, 110, 110, 0.6);
+}
+
+.section.newsletterSection .newsletterForm {
+    margin-top: 96px;
+}
+
+.section.newsletterSection .newsletterForm .newsletterSubmit {
+    padding: 28px 80px;
+    font-size: 21px;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 250px;
+    background-image: -webkit-linear-gradient(bottom left, rgb(76,209,67) 0%, rgb(71,166,78) 100%);
+    background-image: -o-linear-gradient(bottom left, rgb(76,209,67) 0%, rgb(71,166,78) 100%);
+    background-image: linear-gradient(to top right, rgb(76,209,67) 0%, rgb(71,166,78) 100%);
+}
+
+.section-content .separator {}
+
+.section-content .socialNetworkDiv {}
+
+.section-content .socialNetworkDiv .listSocialNetwork {}
