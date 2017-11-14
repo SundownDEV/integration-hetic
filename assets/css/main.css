@@ -83,6 +83,10 @@ body {
     margin: auto;
 }
 
+.section-content p {
+    line-height: 1.364;
+}
+
 .section .filter{
     width: 100%;
 }
@@ -165,7 +169,42 @@ body {
 
 .section.newsletterSection .newsletterContainer {
     background: #fff;
-    width: 500px;
-    padding: 15px;
     border-radius: 10px;
+    padding: 70px 90px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section.newsletterSection .newsletterTitleDiv {
+    margin-bottom: 64px;
+}
+    
+.section.newsletterSection .newsletterTitleDiv .newsletterTitle {
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    color: #4dd143;
+    text-transform: uppercase;
+    margin: auto;
+    margin-left: 15px;
+    vertical-align: super;
+}
+
+.section.newsletterSection .newsletterText {
+    width: 57%;
+    font-size: 22px;
+    color: rgb(110, 110, 110);
+    margin: auto;
+    font-weight: 300;
+}
+
+.section.newsletterSection .newsletterForm .newsletterInput {
+    font-size: 22px;
+    color: rgba(110, 110, 110, 0.6);
+    line-height: 1.2;
+    padding: 26px 21px;
+    font-weight: 300;
+    outline: none;
 }
