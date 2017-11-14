@@ -1,1 +1,11 @@
-<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_2" fill="#aaaaaa" d="m31.3352,11.02579l-0.1386,4.7477c0,0 -0.6065,-0.0247 -2.7355,0c-2.0919,0.0248 -2.1167,1.5844 -2.1167,1.6587l-0.0247,3.9486l4.8769,0.0866l-0.7056,5.0503l-4.1466,0l-0.1114,10.645l-5.0255,0l-0.1361,-10.6203l-4.4066,-0.0247l0.1238,-5.1369l4.3323,0c0,0 0,-3.7126 0,-3.7134c0,-1.4528 0.3473,-3.0293 1.1752,-4.2411c0.7303,-1.0689 1.8345,-1.7742 3.0658,-2.1352c0,0 2.5823,-0.8103 5.9733,-0.2653z"/>
+ </g>
+</svg>
