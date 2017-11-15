@@ -283,10 +283,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
+  width: 76%;
 }
 
-.barceloneExemple {
+.artExempleDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+/*.barceloneExemple {
   background: red;
 }
 
@@ -296,22 +301,48 @@ body {
 
 .newYorkExemple {
   background: red;
-}
+}*/
 
 .artExempleTitle {
   font-size: 124px;
   text-transform: uppercase;
   line-height: 102px;
-  font-weight: bold;
-  margin-bottom: 60px;
+  font-weight: 500;
+  margin-bottom: 52px;
 }
 
 .artExempleText {
+  font-size: 22px;
+  font-weight: 300;
   text-align: left;
-  line-height: 200px;
-  background: yellow;
+  line-height: 36px;
+  margin-left: 20px;
 }
 
+.readMore {
+  font-size: 36px;
+  font-weight: bold;
+  color: #5C5454;
+}
+
+.readMoreDiv {
+  display: flex;
+  width: 462px;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-left: 20px;
+}
+
+.readMoreLink {
+  text-decoration: none;
+  width: 470px;
+}
+
+.arrowSvg {
+  margin-top: 9px;
+}
+
+/* Barcelone */
 .barceloneExempleTitle {
   text-align: left;
   color: #335B78;
@@ -321,6 +352,11 @@ body {
   color: #5C5454;
   float: left;
   width: 52%;
+}
+
+/* Sao Paulo */
+.saoPauloExempleTextDiv {
+  align-items: flex-end;
 }
 
 .saoPauloExempleTitle {
@@ -335,9 +371,21 @@ body {
   width: 45%;
 }
 
+.saoPauloExemple .readMoreLink {
+  margin-right: 20px;
+}
+
+/* New-York */
 .newYorkExempleTitle {
   text-align: left;
   color: #F8D20A;
+}
+
+.newYorkExempleDescription {
+  color: #5C5454;
+  text-align: left;
+  float: left;
+  width: 55%;
 }
 
 /* Exemples section */
