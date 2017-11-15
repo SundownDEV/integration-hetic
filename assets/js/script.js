@@ -52,7 +52,7 @@ function fadeOut(el) {
         if (check_all_opacity() == true)
         { 
           fadeIn(el);
-        window.onclick = function(event) {
+          window.onclick = function(event) {
           if (!(event.target == el) && el.style.opacity == 1)
             {
               fadeOut(el);
