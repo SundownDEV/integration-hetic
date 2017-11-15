@@ -74,9 +74,9 @@ body {
   width: 100%;
 }
 
-.section-fullwidth .section-content {
+/*.section-fullwidth .section-content {
     width: 100%!important;
-}
+}*/
 
 .section .sectionContentFlex{
     display: flex;
