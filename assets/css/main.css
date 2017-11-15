@@ -231,10 +231,8 @@ body {
     position: absolute;
     top: 100%;
     left: 0%;
-    margin-top: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0,0,0, 0.8);
     z-index: 1;
     opacity: 0;
@@ -365,9 +363,9 @@ body {
     display: -ms-flexbox;
     display: -webkit-flex;
     flex-direction: column;
-    padding: 60px 50px;
+    padding: 60px 50px 30px 50px;
     width: 70%;
-    height: 400px;
+    height: auto;
 }
 
 .section.newsletterSection .newsletterTitleDiv {
@@ -424,7 +422,7 @@ body {
 }
 
 .section.newsletterSection .newsletterForm .newsletterSubmit {
-    padding: 28px 80px;
+    padding: 28px 0;
     font-size: 21px;
     border: none;
     outline: none;
@@ -433,6 +431,7 @@ body {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     background-image: linear-gradient(45deg, #FAA425 0%, #FC8736 50%, #FD7044 100%);
+    max-width: 40%;
 }
 
 .separator {
@@ -444,7 +443,6 @@ body {
 }
 
 .section-content .socialNetworkDiv {
-  background: red;
   display: flex;
   justify-content: center;
   align-items: center;
