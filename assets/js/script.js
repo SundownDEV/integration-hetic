@@ -28,7 +28,7 @@ function fadeOut(el) {
     for (var i = 0; i < el_country.length; i++)
     {
       el_country[i].addEventListener('click', function () {
-        var string = ".window ." + this.className.baseVal + "_div";
+        var string = ".window ." + this.className.baseVal + "_div"; 
 
         var el = document.querySelector(string);
 
@@ -47,15 +47,13 @@ function fadeOut(el) {
     }
 
 /* fonction de transition pour le bouton section-down */
+var btnDown = document.querySelector('a.btn-section-down');
+
 function scrollDown() {
-    window.scroll({
-      top: window.innerHeight,
-      left: 0,
+    document.querySelector(btnDown.getAttribute("href")).scrollIntoView({
       behavior: 'smooth'
     });
 }
-
-var btnDown = document.querySelector('a.btn-section-down');
 
 btnDown.addEventListener('click', function(){
     scrollDown();
