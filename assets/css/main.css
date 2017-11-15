@@ -74,6 +74,10 @@ body {
   width: 100%;
 }
 
+.section-fullwidth .section-content {
+    width: 100%!important;
+}
+
 .section .sectionContentFlex{
     display: flex;
     display: -webkit-box;
@@ -238,7 +242,7 @@ body {
     top: 100%;
     left: 0%;
     width: 100%;
-    min-height: 661px;
+    height: 100%;
     background-color: rgba(0,0,0, 0.8);
     z-index: 1;
     opacity: 0;
@@ -425,7 +429,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 6px;
-    /*background-image: linear-gradient(-30deg, #12a078 0%, #09a076 100%);*/
     background-image: linear-gradient(-219deg, #43D6F0 0%, #3AD0EB 26%, #20BEDC 100%);
     display: inline-block;
     text-decoration: none;
