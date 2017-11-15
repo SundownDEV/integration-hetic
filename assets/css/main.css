@@ -278,6 +278,65 @@ body {
     color: #fff;
 }
 
+/* Street Art Exemples */
+.streetArtExemples .section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+
+.barceloneExemple {
+  background: red;
+}
+
+.saoPauloExemple {
+  background: blue;
+}
+
+.newYorkExemple {
+  background: red;
+}
+
+.artExempleTitle {
+  font-size: 124px;
+  text-transform: uppercase;
+  line-height: 102px;
+  font-weight: bold;
+}
+
+.artExempleText {
+  text-align: left;
+}
+
+.barceloneExempleTitle {
+  text-align: left;
+  color: #335B78;
+}
+
+.barceloneExempleDescription {
+  color: #5C5454;
+  float: left;
+  width: 55%;
+}
+
+.saoPauloExempleTitle {
+  text-align: right;
+  color: #FD7044;
+}
+
+.saoPauloExempleDescription {
+  color: #5C5454;
+  text-align: left;
+  float: right;
+  width: 45%;
+}
+
+.newYorkExempleTitle {
+  text-align: left;
+  color: #F8D20A;
+}
+
 /* Subscription section */
 .section.subscriptionSection.BgImg {
     background-image: url('../../img/backgrounds/background2.jpg');
