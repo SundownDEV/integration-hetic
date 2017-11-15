@@ -260,8 +260,8 @@ body {
 
 .section.newsletterSection .newsletterContainer {
     background: #fff;
+    background: rgba(255, 255, 255, 0.92);
     border-radius: 10px;
-    padding: 70px 90px;
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -270,11 +270,13 @@ body {
     display: -ms-flexbox;
     display: -webkit-flex;
     flex-direction: column;
-    width: 1000px;
+    padding: 60px 50px;
+    width: 75%;
+    height: 400px;
 }
 
 .section.newsletterSection .newsletterTitleDiv {
-    margin-bottom: 64px;
+    margin-bottom: 40px;
 }
     
 .section.newsletterSection .newsletterTitleDiv .newsletterTitle {
@@ -315,7 +317,7 @@ body {
 }
 
 .section.newsletterSection .newsletterForm {
-    margin-top: 96px;
+    margin-top: 80px;
 }
 
 .section.newsletterSection .newsletterForm .newsletterSubmit {
@@ -330,8 +332,23 @@ body {
     background-image: linear-gradient(to top right, rgb(76,209,67) 0%, rgb(71,166,78) 100%);
 }
 
-.section-content .separator {}
+.separator {
+  padding: 1.9px;
+  background: #dddddd;
+  width: 130px;
+  margin: 0px auto;
+  margin-top: 60px;
+}
 
-.section-content .socialNetworkDiv {}
+.section-content .socialNetworkDiv {
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
 
-.section-content .socialNetworkDiv .listSocialNetwork {}
+.listItem {
+  display: inline;
+  height: 100%;
+}
