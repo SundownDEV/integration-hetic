@@ -88,9 +88,11 @@ function scrollTo(to, duration) {
 }
 
 for (var i = 0; i < btnDown.length; i++) {
+    var test = btnDown[i].getAttribute('data-target');
     btnDown[i].addEventListener('click', function(){
-        scrollTo(btnDown[i].getAttribute('data-target'), 1000);
+        scrollTo(test, 1000);
     });
+        console.log(btnDown[i].getAttribute('data-target'));
     
-    console.log(btnDown[i].getAttribute('data-target'));
+    //console.log(btnDown[i].getAttribute('data-target'));
 }

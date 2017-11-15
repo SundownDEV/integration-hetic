@@ -364,9 +364,9 @@ body {
     display: -ms-flexbox;
     display: -webkit-flex;
     flex-direction: column;
-    padding: 60px 50px;
+    padding: 60px 50px 30px 50px;
     width: 70%;
-    height: 400px;
+    height: auto;
 }
 
 .section.newsletterSection .newsletterTitleDiv {
@@ -421,12 +421,13 @@ body {
 }
 
 .section.newsletterSection .newsletterForm .newsletterSubmit {
-    padding: 28px 80px;
+    padding: 28px 0;
     font-size: 21px;
     border: none;
     outline: none;
     color: #fff;
     width: 250px;
+    max-width: 40%;
     background: #4abe48;
 }
 
@@ -439,7 +440,6 @@ body {
 }
 
 .section-content .socialNetworkDiv {
-  background: red;
   display: flex;
   justify-content: center;
   align-items: center;
