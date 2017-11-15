@@ -245,7 +245,12 @@ body {
     border-radius: 0;
 }
 
-.section.worldMapSection .Europe_div_pictures {
+.section.worldMapSection .Europe_div_pictures, 
+.section.worldMapSection .Asie_div_pictures, 
+.section.worldMapSection .Oceanie_div_pictures, 
+.section.worldMapSection .Afrique_div_pictures, 
+.section.worldMapSection .Amerique_nord_div_pictures, 
+.section.worldMapSection .Amerique_sud_div_pictures {
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -254,7 +259,12 @@ body {
   justify-content: center;
 }
 
-.section.worldMapSection .Europe_picture {
+.section.worldMapSection .Europe_picture,
+.section.worldMapSection .Asie_picture,
+.section.worldMapSection .Oceanie_picture,
+.section.worldMapSection .Afrique_picture,
+.section.worldMapSection .Amerique_nord_picture,
+.section.worldMapSection .Amerique_sud_picture {
     padding: 1% 0% 1% 1%;
     height: 400px;
     width: 30%;
