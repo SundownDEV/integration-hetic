@@ -68,7 +68,7 @@ function fadeOut(el) {
     }
 
 /* fonction de transition pour le bouton section-down */
-var btnDown = document.querySelector('.btnGoTo');
+var btnDown = document.querySelectorAll('.btnGoTo');
 
 function scrollTo(to, duration) {
     var to = document.getElementById(to).offsetTop;
@@ -88,6 +88,8 @@ function scrollTo(to, duration) {
     },10);
 }
 
-btnDown.addEventListener('click', function(){
-    scrollTo(btnDown.getAttribute('data-target'), 1000);
-});
+for (var i = 0; i < btnDown.length; i++) {
+    btnDown[i].addEventListener('click', function(){
+        scrollTo(btnDown[i].getAttribute('data-target'), 1000);
+    });
+}
