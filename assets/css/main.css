@@ -124,6 +124,39 @@ body {
     height: 100%;
 }
 
+.head {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50;
+  width: 80%;
+  align-items: center;
+}
+
+.subscribeButtonHead {
+    padding: 12px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 24px;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    text-decoration: none;
+    color: #D8D8D8;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.subscribeButtonHead:hover {
+  color: black;
+  background: #D8D8D8;
+  transition: ease 0.3s;
+}
+
+.graficityIcon {
+  width: 60px;
+}
+
 .section .section-content .section-down {
     position: absolute;
     bottom: 0;
