@@ -103,6 +103,7 @@ body {
     width: 100%;
 }
 
+/*  graficity-head section  */
 .section.graficity-head.BgImg {
     background-image: url('../../img/backgrounds/background1.jpg');
 }
@@ -110,7 +111,7 @@ body {
 .section.graficity-head .filterTunnel {
     width: 100%;
     background: #000;
-    opacity: 0.70;
+    opacity: 0.40;
 }
 
 .section.graficity-head .section-content {
@@ -148,6 +149,12 @@ body {
     font-weight: 300;
 }
 
+
+/* Subscription section */
+.section.subscriptionSection.BgImg {
+    background-image: url('../../img/backgrounds/background2.jpg');
+}
+
 .filterSubscription {
   width: 100%;
   background-image: -webkit-linear-gradient(300deg, rgb(4,219,146) 0%, rgb(16,123,130) 35%, rgb(27,26,113) 100%);
@@ -163,37 +170,6 @@ body {
   align-items: center;
 }
 
-.section.subscriptionSection.BgImg {
-    background-image: url('../../img/backgrounds/background2.jpg');
-}
-
-.section-content.subscriptionContainer {
-  background: rgba(1, 46, 62, 0.7);
-  width: 80%;
-  height: 500px;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.35);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.magazineCoverImgDiv {
-  width: 40%;
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.magazineCoverImg {
-  height: 100%;
-}
-
-/* Subscription section */
-.section.subscriptionSection.BgImg {
-    background-image: url('../../img/backgrounds/background2.jpg');
-}
-
 .section.subscriptionSection .section-content {
     background-color: rgba(1, 46, 62, 0.35);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
@@ -206,12 +182,16 @@ body {
     align-items: center;
 }
 
-.section.subscriptionSection .section-content .magazineCoverImgDiv {
-    width: 35%;
-    height: 100%;
+.magazineCoverImgDiv {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .magazineCoverImg {
+  height: 100%;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
 }
 
