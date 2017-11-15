@@ -91,4 +91,6 @@ for (var i = 0; i < btnDown.length; i++) {
     btnDown[i].addEventListener('click', function(){
         scrollTo(btnDown[i].getAttribute('data-target'), 1000);
     });
+    
+    console.log(btnDown[i].getAttribute('data-target'));
 }
