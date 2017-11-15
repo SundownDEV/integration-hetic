@@ -255,12 +255,9 @@ body {
 .section.worldMapSection .Afrique_div_pictures, 
 .section.worldMapSection .Amerique_nord_div_pictures, 
 .section.worldMapSection .Amerique_sud_div_pictures {
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .section.worldMapSection .Europe_picture,
@@ -271,8 +268,9 @@ body {
 .section.worldMapSection .Amerique_sud_picture {
     padding: 1% 0% 1% 1%;
     height: 400px;
-    width: 30%;
+    width: auto;
     display: inline-block;
+    margin: auto;
 }
 
 .section.worldMapSection .close {
