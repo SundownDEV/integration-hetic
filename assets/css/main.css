@@ -133,6 +133,12 @@ body {
   align-items: center;
 }
 
+#Calque_1 {
+  padding-top: 10px;
+  height: 80px;
+  width: 80px;
+}
+
 .subscribeButtonHead {
     padding: 12px 20px;
     text-transform: uppercase;
@@ -187,10 +193,11 @@ body {
 
 .section.graficity-head .headerTextDiv .catchPhrase {
     font-size: 32px;
-    letter-spacing: 20px;
+    letter-spacing: 28px;
     text-transform: uppercase;
     margin-top: 40px;
     font-weight: 300;
+    opacity: 0.6;
 }
 
 /* Section map */
@@ -261,6 +268,9 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+
+/* Street art exemples section */
+
 
 /* Subscription section */
 .section.subscriptionSection.BgImg {
