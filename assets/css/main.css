@@ -515,19 +515,78 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 64%;
 }
     
 .section.ForfaitsSection .singleForfaitDiv {
-    padding: 20px;
-    width: 200px;
+    padding: 25px;
+    width: 320px;
     display: inline-block;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    background: #f7f7f7;
+    background: #bbebf4;
     color: #797979;
     margin: auto;
+    border-radius: 10px;
 }
 
+.section.ForfaitsSection .singleForfaitDiv .singleForfaitHeader h2 {
+        font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 1.2em;
+}
+
+.section.ForfaitsSection .singleForfaitDiv .singleForfaitHeader h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #5f5959;
+    margin-bottom: 10px;
+}
+
+.section.ForfaitsSection .singleForfaitDiv .singleForfaitHeader p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.section.ForfaitsSection .singleForfaitDiv .singleForfaitHeader span a {
+    color: #22bedc;
+}
+
+.section.ForfaitsSection .singleForfaitDiv .singleForfaitPrice {
+    margin-top: 30px;
+}
+
+.section.ForfaitsSection .singleForfaitDiv .singleForfaitPrice h3 {
+    color: #fd7044;
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.section.ForfaitsSection .singleForfaitDiv .singleForfaitPrice h3 small {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.section.ForfaitsSection .singleForfaitDiv .singleForfaitPrice span {
+    font-weight: 300;
+    color: #9fabad;
+}
+
+.section.ForfaitsSection .singleForfaitDiv .singleForfaitButton {
+    background: -webkit-linear-gradient(300deg, #2ac5e2, #3bd1eb);
+    background: -o-linear-gradient(300deg, #2ac5e2, #3bd1eb);
+    background: linear-gradient(30deg, #2ac5e2, #3bd1eb);
+    padding: 20px 60px;
+    display: inline-block;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+}
 
 /* Newsletter section */
 .section.newsletterSection.BgImg {
