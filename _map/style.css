@@ -1,3 +1,7 @@
+body {
+	background-color: #333;
+}
+
 .svg_map {
 	position: absolute;
 	width: 100%;
@@ -28,6 +32,20 @@ path:hover {
 	border-radius: 20px;
 }
 
+.Europe_div_pictures {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+.Europe_picture {
+    padding-top: 10%;
+    padding-left: 1%;
+	height: 400px;
+	width : 30%;
+	display: inline-block;
+}
+
 .Asie_div {
 	display: none;
 	position: absolute;
@@ -41,6 +59,7 @@ path:hover {
 	opacity: 0;
 	border-radius: 20px;
 }
+
 .Oceanie_div {
 	display: none;
 	position: absolute;
@@ -54,6 +73,7 @@ path:hover {
 	opacity: 0;
 	border-radius: 20px;
 }
+
 .Afrique_div {
 	display: none;
 	position: absolute;
@@ -67,6 +87,7 @@ path:hover {
 	opacity: 0;
 	border-radius: 20px;
 }
+
 .Amerique_nord_div {
 	display: none;
 	position: absolute;
@@ -80,6 +101,7 @@ path:hover {
 	opacity: 0;
 	border-radius: 20px;
 }
+
 .Amerique_sud_div {
 	display: none;
 	position: absolute;
@@ -92,4 +114,14 @@ path:hover {
 	z-index: 1;
 	opacity: 0;
 	border-radius: 20px;
+}
+
+.close {
+    color: white;
+    float: right;
+    padding-top: 1%;
+    padding-right: 2%;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
