@@ -300,19 +300,19 @@ body {
 
 .mosaique1 {
   position: absolute;
-  width: 56%;
+  width: 50%;
   right: 0;
 }
 
 .mosaique2 {
   position: absolute;
-  width: 56%;
+  width: 50%;
   left: 0;
 }
 
 .mosaique3 {
   position: absolute;
-  width: 56%;
+  width: 50%;
   right: 0;
 }
 
@@ -320,18 +320,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-/*.barceloneExemple {
-  background: red;
-}
-
-.saoPauloExemple {
-  background: blue;
-}
-
-.newYorkExemple {
-  background: red;
-}*/
 
 .artExempleTitle {
   font-size: 124px;
@@ -379,7 +367,7 @@ body {
   background: #294248;
   left: 0;
   width: 100%;
-  height: 231px;
+  height: 206px;
 }
 
 .barceloneExempleTextDiv {
