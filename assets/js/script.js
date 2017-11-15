@@ -12,10 +12,7 @@ function  check_all_opacity() {
       && amerique_sud.style.opacity == 0 && afrique.style.opacity == 0)
     return true;
   else
-  {
-    console.log('NON');
     return false;
-  }
 }
 
 function fadeIn(el) {
@@ -53,8 +50,9 @@ function fadeOut(el) {
         var el = document.querySelector(string);
 
         if (check_all_opacity() == true)
+        { 
           fadeIn(el);
-        window.onclick = function(event) {
+          window.onclick = function(event) {
           if (!(event.target == el) && el.style.opacity == 1)
             {
               fadeOut(el);
@@ -63,6 +61,7 @@ function fadeOut(el) {
             }, 1200);
           el_svg.style.display = 'block';
           }
+        }
         };
       });
     }
