@@ -58,7 +58,7 @@ body {
 
 .section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -82,7 +82,7 @@ body {
     display: -webkit-flex;
     position: absolute;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
     flex-direction: column;
 }
@@ -127,6 +127,16 @@ body {
     position: absolute;
     bottom: 0;
     padding-bottom: 15px;
+    font-size: 32px;
+}
+
+.section .section-content .section-down a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: .2s ease-in-out;
+}
+
+.section .section-content .section-down a:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 .section.graficity-head .headerTextDiv {
@@ -289,6 +299,12 @@ body {
     vertical-align: super;
 }
 
+.newsletterTitleDiv i {
+    font-size: 44px;
+    color: #4dd143;
+    vertical-align: initial;
+}
+
 .section.newsletterSection .newsletterText {
     width: 100%;
     font-size: 22px;
@@ -351,8 +367,17 @@ body {
 .listItem {
   display: inline;
   height: 100%;
+  margin-right: 15px;
 }
 
-#svg-pinterest:hover{
-    fill:red;
+.listItem a {
+    color: #aaa;
+    font-size: 36px;
+    vertical-align: middle;
+    display: inline-block;
+    transition: .2s ease-in-out;
+}
+
+.listItem a:hover {
+    color: #636363;
 }
