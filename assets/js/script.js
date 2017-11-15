@@ -68,7 +68,7 @@ function fadeOut(el) {
     }
 
 /* fonction de transition pour le bouton section-down */
-var btnDown = document.querySelector('a.btn-section-down');
+var btnDown = document.querySelector('.btnGoTo');
 
 function scrollTo(to, duration) {
     var to = document.getElementById(to).offsetTop;

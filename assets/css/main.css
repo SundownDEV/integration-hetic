@@ -149,7 +149,8 @@ body {
 
 .subscribeButtonHead:hover {
   color: black;
-  background: #D8D8D8;
+  background: #fff;
+  border-color: #fff;
   transition: ease 0.3s;
 }
 
