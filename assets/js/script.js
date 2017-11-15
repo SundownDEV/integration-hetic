@@ -92,7 +92,8 @@ for (var i = 0; i < btnDown.length; i++) {
     btnDown[i].addEventListener('click', function(){
         scrollTo(test, 1000);
     });
-        console.log(btnDown[i].getAttribute('data-target'));
+    
+    console.log(btnDown[i].getAttribute('data-target'));
     
     //console.log(btnDown[i].getAttribute('data-target'));
 }
