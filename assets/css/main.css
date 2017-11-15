@@ -349,6 +349,23 @@ body {
     font-size: 20px;
 }
 
+/* Forfait section */
+.section.ForfaitsSection .section-content {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+    
+.section.ForfaitsSection .singleForfaitDiv {
+    padding: 20px;
+    width: 28%;
+    display: inline-block;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #f7f7f7;
+    color: #797979;
+}
+
 
 /* Newsletter section */
 .section.newsletterSection.BgImg {
