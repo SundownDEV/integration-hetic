@@ -45,16 +45,19 @@ function fadeOut(el) {
     for (var i = 0; i < el_country.length; i++)
     {
       el_country[i].addEventListener('click', function () {
-        var string = ".window ." + this.className.baseVal + "_div"; 
+        var name = this.className.baseVal;
+        var string = ".window ." + name + "_div"; 
 
         var el = document.querySelector(string);
 
         if (check_all_opacity() == true)
         { 
           fadeIn(el);
+          var close = document.querySelector(string + " .close");
           window.onclick = function(event) {
-          if (!(event.target == el) && el.style.opacity == 1)
-            {
+          if ( (!(event.target == el)) && event.target.className != (name + '_picture') && el.style.opacity == 1)
+/*          if (!(event.target == el) && el.style.opacity == 1)
+*/            {
               fadeOut(el);
               setTimeout(function() {
                 el.style.display = 'none';
