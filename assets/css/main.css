@@ -161,7 +161,7 @@ body {
     position: absolute;
     bottom: 0;
     padding-bottom: 15px;
-    font-size: 32px;
+    font-size: 42px;
 }
 
 .section .section-content .section-down a {
@@ -199,10 +199,13 @@ body {
 
 .section.worldMapSection .worldMapImgDiv {
     padding: 50px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .section.worldMapSection .svg_map {
-	height: 500px;
+	max-width: 90%; 
+    height: 500px;
 	z-index: 0;
 }
 
@@ -217,20 +220,24 @@ body {
 	fill: #757575;
 }
 
-.section.worldMapSection .Europe_div {
-	display: none;
-	position: absolute;
-  top: 100%;
-  left: 5%;
-  margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-  height: 80vh;
-  background-color: black;
-  z-index: 1;
-  opacity: 0;
-  border-radius: 20px;
+.section.worldMapSection .Europe_div,
+.section.worldMapSection .Asie_div,
+.section.worldMapSection .Oceanie_div,
+.section.worldMapSection .Afrique_div,
+.section.worldMapSection .Amerique_nord_div,
+.section.worldMapSection .Amerique_sud_div {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    background-color: rgba(0,0,0, 0.8);
+    z-index: 1;
+    opacity: 0;
+    border-radius: 0;
 }
 
 .section.worldMapSection .Europe_div_pictures {
@@ -240,91 +247,10 @@ body {
 }
 
 .section.worldMapSection .Europe_picture {
-    padding-top: 10%;
-    padding-left: 1%;
-  height: 400px;
-  width : 30%;
-  display: inline-block;
-}
-
-.section.worldMapSection .Asie_div {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 5%;
-  margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-  height: 80vh;
-  background-color: black;
-  z-index: 1;
-  opacity: 0;
-  border-radius: 20px;
-}
-
-.section.worldMapSection .Oceanie_div {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 5%;
-  margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-  height: 80vh;
-  background-color: black;
-  z-index: 1;
-  opacity: 0;
-  border-radius: 20px;
-}
-
-.section.worldMapSection .Afrique_div {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 5%;
-  margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-  height: 80vh;
-  background-color: black;
-  z-index: 1;
-  opacity: 0;
-  border-radius: 20px;
-}
-
-.section.worldMapSection .Amerique_nord_div {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 5%;
-  margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-  height: 80vh;
-  background-color: black;
-  z-index: 1;
-  opacity: 0;
-  border-radius: 20px;
-}
-
-.section.worldMapSection .Amerique_sud_div {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 5%;
-  margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-  height: 80vh;
-  background-color: black;
-  z-index: 1;
-	opacity: 0;
-	border-radius: 20px;
+    padding: 1% 0% 1% 1%;
+    height: 400px;
+    width: 30%;
+    display: inline-block;
 }
 
 .section.worldMapSection .close {
@@ -438,7 +364,7 @@ body {
     display: -webkit-flex;
     flex-direction: column;
     padding: 60px 50px;
-    width: 75%;
+    width: 70%;
     height: 400px;
 }
 

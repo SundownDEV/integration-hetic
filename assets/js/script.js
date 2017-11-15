@@ -1,3 +1,4 @@
+/* fonctions de la world map */
 function fadeIn(el) {
       el.style.display = 'block';
 
@@ -28,13 +29,11 @@ function fadeOut(el) {
     for (var i = 0; i < el_country.length; i++)
     {
       el_country[i].addEventListener('click', function () {
-        var string = ".window ." + this.className.baseVal + "_div";
-        console.log(string);
+        var string = ".window ." + this.className.baseVal + "_div"; 
 
         var el = document.querySelector(string);
 
         fadeIn(el);
-        el_svg.style.display = 'none';
         window.onclick = function(event) {
           if (!(event.target == el) && el.style.opacity == 1)
             {
@@ -49,12 +48,16 @@ function fadeOut(el) {
     }
 
 /* fonction de transition pour le bouton section-down */
-/*function scrollTo(to, duration) {
+var btnDown = document.querySelector('a.btn-section-down');
+
+function scrollTo(to, duration) {
+    var to = document.getElementById(to).offsetTop;
+    
     if (document.body.scrollTop == to) return;
     var diff = to - document.body.scrollTop;
     var scrollStep = Math.PI / (duration / 10);
     var count = 0, currPos;
-    start = element.scrollTop;
+    start = window.pageYOffset;
     scrollInterval = setInterval(function(){
         if (document.body.scrollTop != to) {
             count = count + 1;
@@ -63,4 +66,8 @@ function fadeOut(el) {
         }
         else { clearInterval(scrollInterval); }
     },10);
-}*/
+}
+
+btnDown.addEventListener('click', function(){
+    scrollTo(btnDown.getAttribute('data-target'), 1000);
+});
