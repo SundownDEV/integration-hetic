@@ -128,7 +128,7 @@ body {
     position: absolute;
     bottom: 0;
     padding-bottom: 15px;
-    font-size: 32px;
+    font-size: 42px;
 }
 
 .section .section-content .section-down a {
@@ -166,10 +166,13 @@ body {
 
 .section.worldMapSection .worldMapImgDiv {
     padding: 50px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .section.worldMapSection .svg_map {
-	height: 500px;
+	max-width: 90%; 
+    height: 500px;
 	z-index: 0;
 }
 
