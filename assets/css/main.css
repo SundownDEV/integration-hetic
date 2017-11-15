@@ -131,6 +131,12 @@ body {
   top: 50;
   width: 80%;
   align-items: center;
+  }
+
+#Calque_1 {
+  padding-top: 10px;
+  height: 80px;
+  width: 80px;
 }
 
 .subscribeButtonHead {
@@ -187,10 +193,11 @@ body {
 
 .section.graficity-head .headerTextDiv .catchPhrase {
     font-size: 32px;
-    letter-spacing: 20px;
+    letter-spacing: 28px;
     text-transform: uppercase;
     margin-top: 40px;
     font-weight: 300;
+    opacity: 0.6;
 }
 
 /* Section map */
