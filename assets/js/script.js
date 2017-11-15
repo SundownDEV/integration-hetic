@@ -29,12 +29,10 @@ function fadeOut(el) {
     {
       el_country[i].addEventListener('click', function () {
         var string = ".window ." + this.className.baseVal + "_div";
-        console.log(string);
 
         var el = document.querySelector(string);
 
         fadeIn(el);
-        el_svg.style.display = 'none';
         window.onclick = function(event) {
           if (!(event.target == el) && el.style.opacity == 1)
             {
@@ -57,7 +55,7 @@ function scrollDown() {
     });
 }
 
-var btnDown = document.querySelector('.btn-section-down');
+var btnDown = document.querySelector('a.btn-section-down');
 
 btnDown.addEventListener('click', function(){
     scrollDown();
