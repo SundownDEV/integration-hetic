@@ -49,18 +49,16 @@ function fadeOut(el) {
     }
 
 /* fonction de transition pour le bouton section-down */
-/*function scrollTo(to, duration) {
-    if (document.body.scrollTop == to) return;
-    var diff = to - document.body.scrollTop;
-    var scrollStep = Math.PI / (duration / 10);
-    var count = 0, currPos;
-    start = element.scrollTop;
-    scrollInterval = setInterval(function(){
-        if (document.body.scrollTop != to) {
-            count = count + 1;
-            currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
-            document.body.scrollTop = currPos;
-        }
-        else { clearInterval(scrollInterval); }
-    },10);
-}*/
+function scrollDown() {
+    window.scroll({
+      top: window.innerHeight,
+      left: 0,
+      behavior: 'smooth'
+    });
+}
+
+var btnDown = document.querySelector('.btn-section-down');
+
+btnDown.addEventListener('click', function(){
+    scrollDown();
+});
