@@ -32,8 +32,8 @@ function fadeOut(el) {
       var tick_out = function() {
         if (el.style.opacity > 0)
         {
-          setTimeout(tick_out, 3);
-          el.style.opacity = el.style.opacity - 0.005;
+          setTimeout(tick_out, 1);
+          el.style.opacity = el.style.opacity - 0.01;
         }
       };
       tick_out();
