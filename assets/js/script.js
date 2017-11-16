@@ -90,7 +90,10 @@ function sleep (time) {
 }
 
 var btnDown = document.querySelectorAll('.btnGoTo').forEach(function(button){
+    button.removeAttribute('href');
+    button.style.cursor = 'pointer';
     button.addEventListener('click', function(){
+        
         scrollTo(document.body, document.getElementById(button.getAttribute('data-target')).offsetTop, 500);
     });
 });
