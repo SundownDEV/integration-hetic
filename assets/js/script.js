@@ -65,7 +65,7 @@ function fadeOut(el) {
                 el.style.display = 'none';
             }, 1200);
           el_svg.style.display = 'block';
-          body.style.overflow = 'auto';
+          body.style.overflow = 'inherit';
           }
         }
         };
