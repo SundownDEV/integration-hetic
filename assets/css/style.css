@@ -537,6 +537,11 @@ body {
     margin: auto;
     border-radius: 10px;
     box-sizing: border-box;
+    transition: .5s;
+}
+
+.section.ForfaitsSection .singleForfaitDiv:hover {
+    transform: scale(1.03);
 }
 
 .section.ForfaitsSection .singleForfaitDiv .singleForfaitHeader h2 {
@@ -587,7 +592,7 @@ body {
 
 .section.ForfaitsSection .singleForfaitDiv .singleForfaitPrice span {
     font-weight: 300;
-    color: #9fabad;
+    color: #5f5959;
 }
 
 .section.ForfaitsSection .singleForfaitDiv .singleForfaitButton {
@@ -605,10 +610,6 @@ body {
     text-align: center;
     width: 100%;
     transition: .5s;
-}
-
-.section.ForfaitsSection .singleForfaitDiv .singleForfaitButton:hover {
-/*    transform: perspective(800px) translate3d(0, 0, 25px);*/
 }
 
 /* Newsletter section */
