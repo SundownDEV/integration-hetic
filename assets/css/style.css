@@ -401,6 +401,8 @@ body {
 .barceloneExempleTitle {
   text-align: left;
   color: #335B78;
+    position: relative;
+    z-index: 5;
 }
 
 .barceloneExempleDescription {
@@ -735,33 +737,4 @@ body {
 
 .listItem a:hover {
     color: #636363;
-}
-
-/* Responsive */
-@media(max-width:800px){
-    .section.graficity-head .headerTextDiv .mainTitle {
-        font-size: -webkit-xxx-large;
-        max-width: 100%;
-    }
-    .section.graficity-head .headerTextDiv .catchPhrase {
-        letter-spacing: 0;
-    }
-    .section.subscriptionSection.BgImg {
-        width: 1200px;
-    }
-    .section.subscriptionSection .section-content {
-        flex-direction: column;
-        height: 100%;
-    }
-    .magazineCoverImgDiv {
-        width: 100%;
-        display: block;
-    }
-    .magazineCoverImg {
-        width: 100%;
-    }
-    .section.subscriptionSection .section-content .magazineDescriptionDiv {
-        width: 100%;
-        margin-top: 20px;
-    }
 }
