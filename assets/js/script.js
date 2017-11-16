@@ -110,7 +110,7 @@ function init(){
         els.style.display = 'none';
         
         sleep(800).then(() => {
-            fadeIn(els);
+            fadeIn(els, 10);
         });
     });
 }
