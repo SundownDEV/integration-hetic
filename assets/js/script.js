@@ -16,6 +16,7 @@ function  check_all_opacity() {
 }
 
 function fadeIn(el, nb) {
+      body.style.overflow = 'hidden';
       el.style.display = 'block';
 
       var tick_in = function() {
@@ -39,6 +40,7 @@ function fadeOut(el) {
       tick_out();
 }
 
+    var body = document.querySelector('body');
     var el_country = document.querySelectorAll("svg path");
     var el_svg = document.querySelector("svg");
 
@@ -53,16 +55,17 @@ function fadeOut(el) {
         if (check_all_opacity() == true)
         { 
           fadeIn(el, 1);
+          scrollTo('section2', 500);
           var close = document.querySelector(string + " .close");
           window.onclick = function(event) {
           if ( (!(event.target == el)) && event.target.className != (name + '_picture') && el.style.opacity == 1)
-/*          if (!(event.target == el) && el.style.opacity == 1)
-*/            {
+            {
               fadeOut(el);
               setTimeout(function() {
                 el.style.display = 'none';
             }, 1200);
           el_svg.style.display = 'block';
+          body.style.overflow = 'auto';
           }
         }
         };
@@ -73,6 +76,7 @@ function fadeOut(el) {
 function scrollTo(to, duration) {
     var to = document.getElementById(to).offsetTop;
     
+
     if (document.body.scrollTop == to) return;
     
     var diff = to - document.body.scrollTop;
@@ -84,12 +88,20 @@ function scrollTo(to, duration) {
             count = count + 1;
             currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
             document.body.scrollTop = currPos;
+            
+            /* le seul fix que j'ai trouvé LUL */
+            document.body.scrollTop += 1;
+        }else if(document.body.scrollTop > to){
+            count = count + 1;
+            currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
+            document.body.scrollTop = currPos;
+            
+            /* le seul fix que j'ai trouvé LUL */
+            document.body.scrollTop = document.body.scrollTop-1;
         }else{
             clearInterval(scrollInterval);
         }
         
-        /* le seul fix que j'ai trouvé LUL */
-        document.body.scrollTop += 1;
     }, 10);
 }
 
