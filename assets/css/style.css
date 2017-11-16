@@ -706,7 +706,8 @@ body {
 
 .separator {
   padding: 1.9px;
-  background: #dddddd;
+  background: #AAAAAA;
+  opacity: 0.9;
   width: 130px;
   margin: 0px auto;
   margin-top: 60px;
