@@ -304,6 +304,13 @@ body {
 }
 
 /* Street Art Exemples */
+i.icon {
+    color: #5c5353;
+    font-size: 60px;
+    margin-right: 15px;
+}
+
+
 .streetArtExemples .section-content {
   display: flex;
   flex-direction: column;
@@ -357,12 +364,12 @@ body {
   color: #5C5454;
 }
 
-.readMoreLink:hover .arrowSvg path {
-  fill: #2FBEDA;
+.readMoreLink:hover .readMoreDiv i.icon {
+  color: #2FBEDA;
   transition: ease 0.4s;
 }
 
-.readMoreLink:hover .readMore {
+.readMoreLink:hover .readMoreDiv .readMore {
   color: #2FBEDA;
   transition: ease 0.4s;
 }
@@ -370,7 +377,6 @@ body {
 .readMoreDiv {
   display: flex;
   width: 250px;
-  justify-content: space-between;
   margin-top: 16px;
   margin-left: 4px;
 }
@@ -434,7 +440,7 @@ body {
 }
 
 .saoPauloExemple .readMoreLink {
-  margin-right: 250px;
+/*  margin-right: 250px;*/
   margin-bottom: 60px;
 }
 
