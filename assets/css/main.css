@@ -528,6 +528,12 @@ body {
     font-size: 20px;
 }
 
+/* pas très beau pour l'instant donc à voir */
+/*.section.subscriptionSection .section-content .subscribeButton:hover {
+  color: #fb972c;
+  background-image: linear-gradient(-330deg, #fff 0%, #fff 100%);
+}*/
+
 /* Forfait section */
 .section.ForfaitsSection .section-content {
     margin: auto;
