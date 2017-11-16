@@ -616,7 +616,7 @@ body {
 }
 
 .section.ForfaitsSection .singleForfaitDiv .singleForfaitButton:hover {
-    transform: perspective(800px) translate3d(0, 0, 25px);
+/*    transform: perspective(800px) translate3d(0, 0, 25px);*/
 }
 
 /* Newsletter section */
