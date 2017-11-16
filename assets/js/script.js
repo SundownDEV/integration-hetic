@@ -15,13 +15,13 @@ function  check_all_opacity() {
     return false;
 }
 
-function fadeIn(el) {
+function fadeIn(el, nb) {
       el.style.display = 'block';
 
       var tick_in = function() {
-        if (el.style.opacity < 1)
+        if (el.style.opacity < nb)
         {
-          setTimeout(tick_in, 1);
+          setTimeout(tick_in, nb);
           el.style.opacity = +el.style.opacity + 0.01;
         }
       };
@@ -52,7 +52,7 @@ function fadeOut(el) {
 
         if (check_all_opacity() == true)
         { 
-          fadeIn(el);
+          fadeIn(el, 1);
           var close = document.querySelector(string + " .close");
           window.onclick = function(event) {
           if ( (!(event.target == el)) && event.target.className != (name + '_picture') && el.style.opacity == 1)
