@@ -65,7 +65,7 @@ function fadeOut(el) {
                 el.style.display = 'none';
             }, 1200);
           el_svg.style.display = 'block';
-          body.style.overflow = 'auto';
+          body.style.overflow = 'inherit';
           }
         }
         };
@@ -90,7 +90,10 @@ function sleep (time) {
 }
 
 var btnDown = document.querySelectorAll('.btnGoTo').forEach(function(button){
+    button.removeAttribute('href');
+    button.style.cursor = 'pointer';
     button.addEventListener('click', function(){
+        
         scrollTo(document.body, document.getElementById(button.getAttribute('data-target')).offsetTop, 500);
     });
 });
