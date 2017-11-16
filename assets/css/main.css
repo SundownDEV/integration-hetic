@@ -541,7 +541,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 90%;
 }
     
 .section.ForfaitsSection .singleForfaitDiv {
@@ -612,6 +612,11 @@ body {
     color: #fff;
     font-size: 20px;
     border-radius: 10px;
+    transition: .5s;
+}
+
+.section.ForfaitsSection .singleForfaitDiv .singleForfaitButton:hover {
+    transform: perspective(800px) translate3d(0, 0, 25px);
 }
 
 /* Newsletter section */
