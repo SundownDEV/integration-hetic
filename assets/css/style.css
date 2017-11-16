@@ -565,6 +565,7 @@ body {
 .section.ForfaitsSection .singleForfaitDiv .singleForfaitHeader span a:hover {
     /*color: #149CB5;*/
     color: #FD7044;
+    transition: ease 0.2s;
 }
 
 .section.ForfaitsSection .singleForfaitDiv .singleForfaitPrice {
