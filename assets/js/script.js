@@ -84,12 +84,20 @@ function scrollTo(to, duration) {
             count = count + 1;
             currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
             document.body.scrollTop = currPos;
+            
+            /* le seul fix que j'ai trouvé LUL */
+            document.body.scrollTop += 1;
+        }else if(document.body.scrollTop > to){
+            count = count + 1;
+            currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
+            document.body.scrollTop = currPos;
+            
+            /* le seul fix que j'ai trouvé LUL */
+            document.body.scrollTop = document.body.scrollTop-1;
         }else{
             clearInterval(scrollInterval);
         }
         
-        /* le seul fix que j'ai trouvé LUL */
-        document.body.scrollTop += 1;
     }, 10);
 }
 
