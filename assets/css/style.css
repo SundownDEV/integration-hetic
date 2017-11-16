@@ -528,12 +528,13 @@ body {
     
 .section.ForfaitsSection .singleForfaitDiv {
     padding: 25px;
-    width: 320px;
+    width: 30%;
     display: inline-block;
     background: #bbebf4;
     color: #797979;
     margin: auto;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .section.ForfaitsSection .singleForfaitDiv .singleForfaitHeader h2 {
