@@ -401,6 +401,8 @@ body {
 .barceloneExempleTitle {
   text-align: left;
   color: #335B78;
+    position: relative;
+    z-index: 5;
 }
 
 .barceloneExempleDescription {
@@ -474,10 +476,10 @@ body {
 }
 
 .section.subscriptionSection .section-content {
-    background-color: rgba(1, 46, 62, 0.35);
+    background-color: rgba(16, 21, 26, 0.35);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
     padding: 50px;
-    width: 75%;
+    width: 80%;
     height: 350px;
     color: #ededed;
     display: flex;
@@ -505,13 +507,13 @@ body {
 
 .section.subscriptionSection .section-content .magazineDescriptionTitle {
     font-size: 36px;
-    text-transform: uppercase;
     line-height: 1.2;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .section.subscriptionSection .section-content .magazineDescriptionText {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 300;
     margin-bottom: 27px;
     height: auto;
@@ -563,7 +565,6 @@ body {
 }
 
 .section.ForfaitsSection .singleForfaitDiv .singleForfaitHeader span a:hover {
-    /*color: #149CB5;*/
     color: #FD7044;
     transition: ease 0.2s;
 }
@@ -706,7 +707,8 @@ body {
 
 .separator {
   padding: 1.9px;
-  background: #dddddd;
+  background: #AAAAAA;
+  opacity: 0.9;
   width: 130px;
   margin: 0px auto;
   margin-top: 60px;
@@ -735,33 +737,4 @@ body {
 
 .listItem a:hover {
     color: #636363;
-}
-
-/* Responsive */
-@media(max-width:800px){
-    .section.graficity-head .headerTextDiv .mainTitle {
-        font-size: -webkit-xxx-large;
-        max-width: 100%;
-    }
-    .section.graficity-head .headerTextDiv .catchPhrase {
-        letter-spacing: 0;
-    }
-    .section.subscriptionSection.BgImg {
-        width: 1200px;
-    }
-    .section.subscriptionSection .section-content {
-        flex-direction: column;
-        height: 100%;
-    }
-    .magazineCoverImgDiv {
-        width: 100%;
-        display: block;
-    }
-    .magazineCoverImg {
-        width: 100%;
-    }
-    .section.subscriptionSection .section-content .magazineDescriptionDiv {
-        width: 100%;
-        margin-top: 20px;
-    }
 }
