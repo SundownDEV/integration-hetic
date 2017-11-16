@@ -16,7 +16,6 @@ function  check_all_opacity() {
 }
 
 function fadeIn(el, nb) {
-      body.style.overflow = 'hidden';
       el.style.display = 'block';
 
       var tick_in = function() {
@@ -54,6 +53,7 @@ function fadeOut(el) {
 
         if (check_all_opacity() == true)
         { 
+          body.style.overflow = 'hidden';
           fadeIn(el, 1);
           scrollTo('section2', 500);
           var close = document.querySelector(string + " .close");
