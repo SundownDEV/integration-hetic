@@ -268,9 +268,18 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 1000px;
     max-width: 100%;
     margin: auto;
+    z-index: 1;
+}
+
+.container_europe_pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .section.worldMapSection .Europe_picture,
@@ -284,6 +293,42 @@ body {
     height: auto;
     display: inline-block;
     margin: auto;
+    transition: ease 1s;
+}
+
+.section.worldMapSection .Europe_picture {
+  width: 100%;
+}
+
+.hoverDescription {
+  /*background: #32556A;*/
+  background: white;
+  width: 333px;
+  height: 417px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+
+.descriptionFrancePic {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hoverFranceDescription {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.container_france_pic:hover .Europe_picture {
+  transform: scale(1.2);
+}
+
+.container_france_pic:hover .hoverDescription {
+  transition: ease 1s;
+  opacity: 0.6;
 }
 
 .section.worldMapSection .close {
